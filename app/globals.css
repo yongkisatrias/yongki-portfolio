@@ -63,7 +63,7 @@
 }
 
 .h1 {
-  @apply text-6xl xl:text-[72px] xl:leading-[80px] tracking-[-2px] font-bold;
+  @apply text-5xl xl:text-[62px] xl:leading-[80px] tracking-[-2px] font-bold;
 }
 
 .h2 {

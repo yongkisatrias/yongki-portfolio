@@ -11,24 +11,24 @@ import {
 import Link from "next/link";
 
 const icons = [
+  // {
+  //   path: "/",
+  //   name: <RiYoutubeFill />,
+  // },
   {
-    path: "/",
-    name: <RiYoutubeFill />,
-  },
-  {
-    path: "/",
+    path: "https://www.linkedin.com/in/yongkisatrias/",
     name: <RiLinkedinFill />,
   },
   {
-    path: "/",
+    path: "https://github.com/yongkisatrias",
     name: <RiGithubFill />,
   },
   {
-    path: "/",
+    path: "https://www.facebook.com/yongkisatrias/",
     name: <RiFacebookFill />,
   },
   {
-    path: "/",
+    path: "https://www.instagram.com/yongkisatrias/",
     name: <RiInstagramFill />,
   },
 ];
@@ -38,7 +38,7 @@ const Socials = ({ containerStyles, IconsStyles }) => {
     <div className={`${containerStyles}`}>
       {icons.map((icon, index) => {
         return (
-          <Link href={icon.path} key={index}>
+          <Link href={icon.path} target="_blank" key={index}>
             <div className={`${IconsStyles}`}>{icon.name}</div>
           </Link>
         );

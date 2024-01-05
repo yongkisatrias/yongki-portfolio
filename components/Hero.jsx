@@ -24,12 +24,10 @@ const Hero = () => {
             <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
               Fullstack Web & Mobile Developer
             </div>
-            <h1 className="h1 mb-4">Hello, my name is Yongki Satria Sanjaya</h1>
+            <h1 className="h1 mb-4">Hi👋🏻, I'm Yongki Satria Sanjaya</h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-              sed quam eveniet quasi nostrum numquam aperiam necessitatibus
-              reiciendis asperiores, illo officia vitae vel. Veritatis iusto
-              inventore illo animi voluptatum est!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              placeat, error repellat ex itaque cum?
             </p>
             {/* Buttons */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
@@ -61,18 +59,18 @@ const Hero = () => {
             <Badge
               containerStyles="absolute top-[80%] -left-[1rem]"
               icon={<RiTodoFill />}
-              endCountNum={6}
+              endCountNum={7}
               endCountText=""
               badgeText="Finished Projects"
             />
             {/* Badge 3 */}
-            <Badge
+            {/* <Badge
               containerStyles="absolute top-[55%] -right-8"
               icon={<RiTeamFill />}
               endCountNum={6}
               endCountText=""
               badgeText="Happy Clients"
-            />
+            /> */}
             <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
             <DevImg
               containerStyles="bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom"
