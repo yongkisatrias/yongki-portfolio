@@ -14,8 +14,7 @@ const Footer = () => {
           />
           {/* Copyright */}
           <div className="text-muted-foreground">
-            © Copyright {currentYearCopyright} Yongki Satria Sanjaya. All Rights
-            Reserved.
+            © {currentYearCopyright} Yongki Satria Sanjaya. All Rights Reserved.
           </div>
         </div>
       </div>
