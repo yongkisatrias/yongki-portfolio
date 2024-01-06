@@ -1,4 +1,4 @@
-import { GanttChartSquare, Blocks, Gem } from "lucide-react";
+import { Laptop, Server, Smartphone } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -9,22 +9,22 @@ import {
 
 const servicesData = [
   {
-    icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
-    title: "Web Design",
+    icon: <Laptop size={72} strokeWidth={0.8} />,
+    title: "Front-End Web Development",
     description:
-      "Services Lorem ipsum dolor sit amet consectetur adipisicing elit Voluptates ducimus",
+      "Elevate your online presence with expertly crafted front-end web development services. Transforming ideas into visually stunning and user-friendly websites.",
   },
   {
-    icon: <Blocks size={72} strokeWidth={0.8} />,
-    title: "Web Developer",
+    icon: <Server size={72} strokeWidth={0.8} />,
+    title: "Back-End Web Development",
     description:
-      "Services Lorem ipsum dolor sit amet consectetur adipisicing elit Voluptates ducimus",
+      "Unlock seamless functionality, robust databases, and optimal performance for your website. Let's turn your digital vision into a dynamic reality.",
   },
   {
-    icon: <Gem size={72} strokeWidth={0.8} />,
-    title: "App Developer",
+    icon: <Smartphone size={72} strokeWidth={0.8} />,
+    title: "Mobile Development",
     description:
-      "Services Lorem ipsum dolor sit amet consectetur adipisicing elit Voluptates ducimus",
+      "Unlock the potential of your ideas with our personalized mobile development services! Elevate your digital presence and showcase your unique ideas through cutting-edge, user-friendly mobile applications.",
   },
 ];
 
