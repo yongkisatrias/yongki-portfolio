@@ -31,7 +31,7 @@ const infoData = [
   },
   {
     icon: <GraduationCap size={20} />,
-    text: "Bootcamp Fullstack Web & Mobile Developer in Pijar Camp",
+    text: "Pijar Camp by Telkom Indonesia",
   },
   {
     icon: <HomeIcon size={20} />,
@@ -45,13 +45,13 @@ const qualificationData = [
     data: [
       {
         university: "Pijar Camp by Telkom Indonesia",
-        qualification: "Fullstack Web & Mobile Developer",
+        qualification: "Bootcamp Fullstack Web & Mobile Developer",
         years: "Sep 2023 - Dec 2023",
       },
       {
         university: "Proklamasi 45 Yogyakarta University",
-        qualification: "Management (not finished)",
-        years: "2021 - 2023",
+        qualification: "Management",
+        years: "2021 - 2023 (not finished)",
       },
       {
         university: "Muhammadiyah Kudus Senior High School",
@@ -69,11 +69,6 @@ const qualificationData = [
         years: "2020 - Aug 2023",
       },
       {
-        company: "Freelance",
-        role: "Seller Accounts and Online Game Items",
-        years: "2020 - Aug 2023",
-      },
-      {
         company: "Tempo Gelato",
         role: "Store Cashier",
         years: "2019 - 2020",
@@ -84,36 +79,56 @@ const qualificationData = [
 
 const skillData = [
   {
-    title: "skills",
+    title: "frontend",
     data: [
       {
-        name: "HTML, CSS, Javascript",
+        imgPath: "/logo-skill/html-5-svgrepo-com.svg",
       },
       {
-        name: "Front End Web Developer",
+        imgPath: "/logo-skill/css-3-svgrepo-com.svg",
       },
       {
-        name: "Javascript",
+        imgPath: "/logo-skill/javascript-svgrepo-com.svg",
       },
       {
-        name: "Back End Web Developer",
+        imgPath: "/logo-skill/bootstrap-svgrepo-com.svg",
+      },
+      {
+        imgPath: "/logo-skill/tailwind-svgrepo-com.svg",
+      },
+      {
+        imgPath: "/logo-skill/sass-svgrepo-com.svg",
+      },
+      {
+        imgPath: "/logo-skill/react-svgrepo-com.svg",
+      },
+      {
+        imgPath: "/logo-skill/next-js-svgrepo-com.svg",
       },
     ],
   },
   {
-    title: "tools",
+    title: "backend",
     data: [
       {
-        imgPath: "/about/vscode.svg",
+        imgPath: "/logo-skill/nodejs-svgrepo-com.svg",
       },
       {
-        imgPath: "/about/figma.svg",
+        imgPath: "/logo-skill/express-svgrepo-com.svg",
       },
       {
-        imgPath: "/about/notion.svg",
+        imgPath: "/logo-skill/postgresql-svgrepo-com.svg",
+      },
+    ],
+  },
+  {
+    title: "mobile",
+    data: [
+      {
+        imgPath: "/logo-skill/react-native-1.svg",
       },
       {
-        imgPath: "/about/wordpress.svg",
+        imgPath: "/logo-skill/firebase-svgrepo-com.svg",
       },
     ],
   },
@@ -134,7 +149,7 @@ const About = () => {
           <div className="hidden xl:flex flex-1 relative">
             <DevImg
               containerStyles="bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative"
-              imgSrc="/about/developer.png"
+              imgSrc="/about/yongki-about.png"
             />
           </div>
           {/* Tabs */}
@@ -163,11 +178,12 @@ const About = () => {
                       Fullstack Web & Mobile Developer
                     </h3>
                     <p className="subtitle max-w-xl mx-auto xl:mx-0">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Facilis, laudantium. Est itaque accusamus distinctio
-                      laboriosam, iste vitae culpa expedita libero voluptate
-                      ipsam adipisci doloribus voluptates illo quod, aperiam
-                      aliquam! Consectetur.
+                      I am an ambitious and determined individual pursuing a
+                      career in the world of programming. My high curiosity
+                      motivates me to continue learning and developing my
+                      technical skills. I have a passion for becoming a quality
+                      fullstack developer, and I am committed to giving my best
+                      in every project I work on.
                     </p>
                     {/* Icons */}
                     <div className="grid xl:grid-cols-2 gap-4 mb-12">
@@ -275,50 +291,85 @@ const About = () => {
                 {/* Skills */}
                 <TabsContent value="skills">
                   <div className="text-center xl:text-left">
-                    <h3 className="h3 mb-8">What I Use Everyday</h3>
-                    {/* Skills */}
-                    <div className="mb-16">
-                      <h4 className="text-xl font-semibold mb-2">Skills</h4>
+                    <h3 className="h3 mb-8">
+                      Languages, frameworks & libraries I use
+                    </h3>
+                    {/* Front-End */}
+                    <div className="mb-12">
+                      <h4 className="text-xl font-semibold mb-2">
+                        Front-End Web Development
+                      </h4>
                       <div className="border-b border-border mb-4"></div>
                       {/* Skill List */}
-                      <div>
-                        {getData(skillData, "skills").data.map(
+                      <div className="flex gap-x-2">
+                        {getData(skillData, "frontend").data.map(
                           (item, index) => {
-                            const { name } = item;
+                            const { imgPath } = item;
                             return (
-                              <div
-                                className="w-2/4 text-center xl:text-left mx-auto xl:mx-0"
-                                key={index}
-                              >
-                                <div className="font-medium">{name}</div>
+                              <div key={index}>
+                                <Image
+                                  src={imgPath}
+                                  width={50}
+                                  height={50}
+                                  alt="logo"
+                                  priority
+                                />
                               </div>
                             );
                           }
                         )}
                       </div>
                     </div>
-                    {/* Tools */}
-                    <div>
-                      <h4 className="text-xl font-semibold mb-2 xl:text-left">
-                        Tools
+                    {/* Back-End */}
+                    <div className="mb-12">
+                      <h4 className="text-xl font-semibold mb-2">
+                        Back-End Web Development
                       </h4>
                       <div className="border-b border-border mb-4"></div>
-                      {/* Tools List */}
-                      <div className="flex gap-x-8 justify-center xl:justify-start">
-                        {getData(skillData, "tools").data.map((item, index) => {
-                          const { imgPath } = item;
-                          return (
-                            <div key={index}>
-                              <Image
-                                src={imgPath}
-                                width={48}
-                                height={48}
-                                alt="logo"
-                                priority
-                              />
-                            </div>
-                          );
-                        })}
+                      {/* Skill List */}
+                      <div className="flex gap-x-2">
+                        {getData(skillData, "backend").data.map(
+                          (item, index) => {
+                            const { imgPath } = item;
+                            return (
+                              <div key={index}>
+                                <Image
+                                  src={imgPath}
+                                  width={50}
+                                  height={50}
+                                  alt="logo"
+                                  priority
+                                />
+                              </div>
+                            );
+                          }
+                        )}
+                      </div>
+                    </div>
+                    {/* Mobile */}
+                    <div className="mb-12">
+                      <h4 className="text-xl font-semibold mb-2">
+                        Mobile Development
+                      </h4>
+                      <div className="border-b border-border mb-4"></div>
+                      {/* Skill List */}
+                      <div className="flex gap-x-2">
+                        {getData(skillData, "mobile").data.map(
+                          (item, index) => {
+                            const { imgPath } = item;
+                            return (
+                              <div key={index}>
+                                <Image
+                                  src={imgPath}
+                                  width={50}
+                                  height={50}
+                                  alt="logo"
+                                  priority
+                                />
+                              </div>
+                            );
+                          }
+                        )}
                       </div>
                     </div>
                   </div>
