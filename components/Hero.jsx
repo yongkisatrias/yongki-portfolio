@@ -26,8 +26,8 @@ const Hero = () => {
             </div>
             <h1 className="h1 mb-4">Hi👋🏻, I'm Yongki Satria Sanjaya</h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              placeat, error repellat ex itaque cum?
+              Fullstack and Mobile Dev with Javascript. Love a growth mindset,
+              teamwork, committed & Integrity-driven.
             </p>
             {/* Buttons */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
@@ -36,9 +36,14 @@ const Hero = () => {
                   <Send size={18} /> Contact Me
                 </Button>
               </Link>
-              <Button variant="secondary" className="gap-x-2">
-                <Download size={18} /> Download CV
-              </Button>
+              <Link
+                href="https://drive.google.com/file/d/1nEj9mTGdWpbwGE_TJ2C3hTnb9SzLDyD4/view?usp=drive_link"
+                target="_blank"
+              >
+                <Button variant="secondary" className="gap-x-2">
+                  <Download size={18} /> Download CV
+                </Button>
+              </Link>
             </div>
             {/* Socials */}
             <Socials
@@ -74,7 +79,7 @@ const Hero = () => {
             <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
             <DevImg
               containerStyles="bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom"
-              imgSrc="/hero/developer.png"
+              imgSrc="/hero/developer-yongki-copy.png"
             />
           </div>
         </div>
