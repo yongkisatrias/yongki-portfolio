@@ -5,40 +5,43 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projectData = [
   {
-    image: "/work/4.png",
-    category: "React.js",
-    name: "Example Web",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, pariatur.",
-    link: "/",
-    github: "/",
+    image: "/work/portfolio-yongki.png",
+    category: "Front-End",
+    tools: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    name: "My Portfolio",
+    description: "my personal portfolio page, created with ❤",
+    link: "https://yongki-portfolio.vercel.app/",
+    github: "https://github.com/yongkisatrias/yongki-portfolio",
   },
   {
-    image: "/work/3.png",
-    category: "React.js",
-    name: "Example Web",
+    image: "/work/peworld.png",
+    category: "Front-End",
+    tools: ["Next.js", "Tailwind CSS"],
+    name: "Peworld",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, pariatur.",
-    link: "/",
-    github: "/",
+      "Peworld is a dedicated platform designed for recruiters seeking top-tier talent to join their companies. Our website provides a seamless experience for recruiters to discover and connect with skilled professionals who are ready to contribute to their organizations.",
+    link: "https://peworld-fe-yongki.vercel.app/",
+    github: "https://github.com/yongkisatrias/peworld-fe",
   },
   {
-    image: "/work/2.png",
-    category: "React.js",
-    name: "Example Web",
+    image: "/work/pijar-food.png",
+    category: "Front-End",
+    tools: ["React.js", "Bootstrap"],
+    name: "Pijar Food",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, pariatur.",
-    link: "/",
-    github: "/",
+      "Pijar food is a website which contains many food recipes from various regions & countries and aims to make it easier for people who want to cook so they don't get confused when looking for recipes, users can even add recipes they have made themselves.",
+    link: "https://pijar-food-team-b.vercel.app/",
+    github: "https://github.com/yongkisatrias/pijar-food-fe",
   },
   {
-    image: "/work/1.png",
-    category: "React.js",
-    name: "Example Web",
+    image: "/work/tickitz.png",
+    category: "Front-End",
+    tools: ["React.js", "Bootstrap"],
+    name: "Tickitz",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, pariatur.",
-    link: "/",
-    github: "/",
+      "Discover a seamless and exhilarating movie-going experience with Tickitz, your go-to platform for hassle-free cinema ticket bookings! Say goodbye to long queues and last-minute rushes – Tickitz empowers you to secure your favorite seats with just a few clicks.",
+    link: "https://tickitz-fe-yongkisatrias.vercel.app/",
+    github: "https://github.com/yongkisatrias/tickitz-fe",
   },
 ];
 
