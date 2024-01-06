@@ -17,46 +17,49 @@ import ProjectCard from "./ProjectCard";
 
 const projectData = [
   {
-    image: "/work/4.png",
-    category: "React.js",
-    name: "Example Web",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, pariatur.",
-    link: "/",
-    github: "/",
+    image: "/work/portfolio-yongki.png",
+    category: "Front-End",
+    tools: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    name: "My Portfolio",
+    description: "my personal portfolio page, created with ❤",
+    link: "https://yongki-portfolio.vercel.app/",
+    github: "https://github.com/yongkisatrias/yongki-portfolio",
   },
   {
-    image: "/work/3.png",
-    category: "React.js",
-    name: "Example Web",
+    image: "/work/peworld.png",
+    category: "Front-End",
+    tools: ["Next.js", "Tailwind CSS"],
+    name: "Peworld",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, pariatur.",
-    link: "/",
-    github: "/",
+      "Peworld is a dedicated platform designed for recruiters seeking top-tier talent to join their companies.",
+    link: "https://peworld-fe-yongki.vercel.app/",
+    github: "https://github.com/yongkisatrias/peworld-fe",
   },
   {
-    image: "/work/2.png",
-    category: "React.js",
-    name: "Example Web",
+    image: "/work/pijar-food.png",
+    category: "Front-End",
+    tools: ["React.js", "Bootstrap"],
+    name: "Pijar Food",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, pariatur.",
-    link: "/",
-    github: "/",
+      "Pijar food is a website which contains many food recipes from various regions & countries and aims to make it easier for people who want to cook.",
+    link: "https://pijar-food-team-b.vercel.app/",
+    github: "https://github.com/yongkisatrias/pijar-food-fe",
   },
   {
-    image: "/work/1.png",
-    category: "React.js",
-    name: "Example Web",
+    image: "/work/tickitz.png",
+    category: "Front-End",
+    tools: ["React.js", "Bootstrap"],
+    name: "Tickitz",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, pariatur.",
-    link: "/",
-    github: "/",
+      "Discover a seamless and exhilarating movie-going experience with Tickitz, your go-to platform for hassle-free cinema ticket bookings!",
+    link: "https://tickitz-fe-yongkisatrias.vercel.app/",
+    github: "https://github.com/yongkisatrias/tickitz-fe",
   },
 ];
 
 const Work = () => {
   return (
-    <section className="relative mb-12 xl:mb-48">
+    <section className="relative mb-12 xl:mb-56">
       <div className="container mx-auto">
         {/* Text */}
         <div className="max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start">
@@ -72,7 +75,7 @@ const Work = () => {
         {/* Slider */}
         <div className="xl:max-w-[1000px] xl:absolute right-0 top-0">
           <Swiper
-            className="h-[480px]"
+            className=""
             slidesPerView={1}
             breakpoints={{
               640: {
