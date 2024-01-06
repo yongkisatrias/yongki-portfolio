@@ -12,19 +12,19 @@ const servicesData = [
     icon: <Laptop size={72} strokeWidth={0.8} />,
     title: "Front-End Web Development",
     description:
-      "Elevate your online presence with expertly crafted front-end web development services. Transforming ideas into visually stunning and user-friendly websites.",
+      "We turn your ideas into visually appealing and user-friendly websites.",
   },
   {
     icon: <Server size={72} strokeWidth={0.8} />,
     title: "Back-End Web Development",
     description:
-      "Unlock seamless functionality, robust databases, and optimal performance for your website. Let's turn your digital vision into a dynamic reality.",
+      "Experience smooth functionality, strong databases, and peak performance for your website.",
   },
   {
     icon: <Smartphone size={72} strokeWidth={0.8} />,
     title: "Mobile Development",
     description:
-      "Unlock the potential of your ideas with our personalized mobile development services! Elevate your digital presence and showcase your unique ideas through cutting-edge, user-friendly mobile applications.",
+      "Showcase your uniqueness through modern and user-friendly mobile apps, boosting your digital presence.",
   },
 ];
 
