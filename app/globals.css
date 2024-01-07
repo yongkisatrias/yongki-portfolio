@@ -96,3 +96,11 @@
   .swiper-pagination-bullet {
   @apply bg-primary;
 }
+
+.text-overflow {
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  display: -webkit-box;
+  text-overflow: clip;
+}

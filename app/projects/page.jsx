@@ -19,7 +19,7 @@ const projectData = [
     tools: ["Next.js", "Tailwind CSS"],
     name: "Peworld",
     description:
-      "Peworld is a dedicated platform designed for recruiters seeking top-tier talent to join their companies. Our website provides a seamless experience for recruiters to discover and connect with skilled professionals who are ready to contribute to their organizations.",
+      "Peworld is a dedicated platform designed for recruiters seeking top-tier talent to join their companies.",
     link: "https://peworld-fe-yongki.vercel.app/",
     github: "https://github.com/yongkisatrias/peworld-fe",
   },
@@ -29,7 +29,7 @@ const projectData = [
     tools: ["React.js", "Bootstrap"],
     name: "Pijar Food",
     description:
-      "Pijar food is a website which contains many food recipes from various regions & countries and aims to make it easier for people who want to cook so they don't get confused when looking for recipes, users can even add recipes they have made themselves.",
+      "Pijar food is a website which contains many food recipes from various regions & countries and aims to make it easier for people who want to cook.",
     link: "https://pijar-food-team-b.vercel.app/",
     github: "https://github.com/yongkisatrias/pijar-food-fe",
   },
@@ -39,7 +39,7 @@ const projectData = [
     tools: ["React.js", "Bootstrap"],
     name: "Tickitz",
     description:
-      "Discover a seamless and exhilarating movie-going experience with Tickitz, your go-to platform for hassle-free cinema ticket bookings! Say goodbye to long queues and last-minute rushes – Tickitz empowers you to secure your favorite seats with just a few clicks.",
+      "Discover a seamless and exhilarating movie-going experience with Tickitz, your go-to platform for hassle-free cinema ticket bookings!",
     link: "https://tickitz-fe-yongkisatrias.vercel.app/",
     github: "https://github.com/yongkisatrias/tickitz-fe",
   },
