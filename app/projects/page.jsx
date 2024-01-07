@@ -34,6 +34,16 @@ const projectData = [
     github: "https://github.com/yongkisatrias/pijar-food-fe",
   },
   {
+    image: "/work/pijar-food-be.png",
+    category: "Back-End",
+    tools: ["Express.js", "PostgreSQL"],
+    name: "Pijar Food API",
+    description:
+      "This API is designed to provide developers with easy access to a vast collection of delicious and diverse recipes, user authentication for website https://pijar-food-team-b.vercel.app.",
+    link: "https://documenter.getpostman.com/view/30079177/2s9YkodgjS",
+    github: "https://github.com/yongkisatrias/pijar-food-be",
+  },
+  {
     image: "/work/tickitz.png",
     category: "Front-End",
     tools: ["React.js", "Bootstrap"],
@@ -42,6 +52,16 @@ const projectData = [
       "Discover a seamless and exhilarating movie-going experience with Tickitz, your go-to platform for hassle-free cinema ticket bookings!",
     link: "https://tickitz-fe-yongkisatrias.vercel.app/",
     github: "https://github.com/yongkisatrias/tickitz-fe",
+  },
+  {
+    image: "/work/tickitz-be.png",
+    category: "Back-End",
+    tools: ["Express.js", "PostgreSQL"],
+    name: "Tickitz API",
+    description:
+      "This API is designed to provide developers with easy access to a vast collection of movies, cinema, user authentication.",
+    link: "https://documenter.getpostman.com/view/30079177/2s9YkoehQM",
+    github: "https://github.com/yongkisatrias/tickitz-be",
   },
 ];
 
