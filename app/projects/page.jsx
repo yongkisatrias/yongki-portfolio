@@ -24,6 +24,16 @@ const projectData = [
     github: "https://github.com/yongkisatrias/peworld-fe",
   },
   {
+    image: "/work/mama-recipe.png",
+    category: "Mobile",
+    tools: ["React Native", "Firebase"],
+    name: "Mama Recipe",
+    description:
+      "Introducing Mama Recipe, your ultimate culinary companion designed to elevate your cooking experience. Whether you're a passionate home chef or an aspiring foodie, our application is crafted just for you. With Mama Recipe, explore a world of culinary wonders right at your fingertips.",
+    link: "https://github.com/yongkisatrias/mama_recipe_mobile/releases/tag/v1.0.0",
+    github: "https://github.com/yongkisatrias/mama_recipe_mobile",
+  },
+  {
     image: "/work/pijar-food.png",
     category: "Front-End",
     tools: ["React.js", "Bootstrap"],
