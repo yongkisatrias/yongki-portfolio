@@ -82,28 +82,36 @@ const skillData = [
     title: "frontend",
     data: [
       {
-        imgPath: "/logo-skill/html-5-svgrepo-com.svg",
+        imgPath: "/logo-skill/html-1.svg",
+        name: "HTML",
       },
       {
-        imgPath: "/logo-skill/css-3-svgrepo-com.svg",
+        imgPath: "/logo-skill/css-3.svg",
+        name: "CSS",
       },
       {
-        imgPath: "/logo-skill/javascript-svgrepo-com.svg",
+        imgPath: "/logo-skill/logo-javascript.svg",
+        name: "JavaScript",
       },
       {
-        imgPath: "/logo-skill/bootstrap-svgrepo-com.svg",
+        imgPath: "/logo-skill/bootstrap-5-1.svg",
+        name: "Bootstrap",
       },
       {
-        imgPath: "/logo-skill/tailwind-svgrepo-com.svg",
+        imgPath: "/logo-skill/tailwind-css-2.svg",
+        name: "Tailwind CSS",
       },
       {
-        imgPath: "/logo-skill/sass-svgrepo-com.svg",
+        imgPath: "/logo-skill/sass-1.svg",
+        name: "Sass",
       },
       {
-        imgPath: "/logo-skill/react-svgrepo-com.svg",
+        imgPath: "/logo-skill/react-2.svg",
+        name: "React.js",
       },
       {
-        imgPath: "/logo-skill/next-js-svgrepo-com.svg",
+        imgPath: "/logo-skill/next-js.svg",
+        name: "Next.js",
       },
     ],
   },
@@ -111,13 +119,16 @@ const skillData = [
     title: "backend",
     data: [
       {
-        imgPath: "/logo-skill/nodejs-svgrepo-com.svg",
+        imgPath: "/logo-skill/nodejs-1.svg",
+        name: "Node.js",
       },
       {
-        imgPath: "/logo-skill/express-svgrepo-com.svg",
+        imgPath: "/logo-skill/expressjs-icon.svg",
+        name: "Express.js",
       },
       {
-        imgPath: "/logo-skill/postgresql-svgrepo-com.svg",
+        imgPath: "/logo-skill/postgresql.svg",
+        name: "PostgreSQL",
       },
     ],
   },
@@ -125,10 +136,12 @@ const skillData = [
     title: "mobile",
     data: [
       {
-        imgPath: "/logo-skill/react-native-1.svg",
+        imgPath: "/logo-skill/react-2.svg",
+        name: "React Native",
       },
       {
-        imgPath: "/logo-skill/firebase-svgrepo-com.svg",
+        imgPath: "/logo-skill/firebase-icon.svg",
+        name: "Firebase",
       },
     ],
   },
@@ -295,25 +308,35 @@ const About = () => {
                       Languages, frameworks & libraries I use
                     </h3>
                     {/* Front-End */}
-                    <div className="mb-12">
+                    <div className="mb-5">
                       <h4 className="text-xl font-semibold mb-2">
                         Front-End Web Development
                       </h4>
                       <div className="border-b border-border mb-4"></div>
                       {/* Skill List */}
-                      <div className="flex gap-x-2">
+                      <div className="flex flex-wrap gap-3">
                         {getData(skillData, "frontend").data.map(
                           (item, index) => {
-                            const { imgPath } = item;
+                            const { imgPath, name } = item;
                             return (
-                              <div key={index}>
-                                <Image
-                                  src={imgPath}
-                                  width={50}
-                                  height={50}
-                                  alt="logo"
-                                  priority
-                                />
+                              <div className="w-16 h-16 mb-5">
+                                <div className="flex justify-center">
+                                  <div
+                                    key={index}
+                                    className="flex items-center w-[50px] h-[50px]"
+                                  >
+                                    <Image
+                                      src={imgPath}
+                                      width={50}
+                                      height={50}
+                                      alt="logo"
+                                      priority
+                                    />
+                                  </div>
+                                </div>
+                                <div className="text-sm mt-2 text-center">
+                                  {name}
+                                </div>
                               </div>
                             );
                           }
@@ -321,25 +344,35 @@ const About = () => {
                       </div>
                     </div>
                     {/* Back-End */}
-                    <div className="mb-12">
+                    <div className="mb-5">
                       <h4 className="text-xl font-semibold mb-2">
                         Back-End Web Development
                       </h4>
                       <div className="border-b border-border mb-4"></div>
                       {/* Skill List */}
-                      <div className="flex gap-x-2">
+                      <div className="flex flex-wrap gap-3">
                         {getData(skillData, "backend").data.map(
                           (item, index) => {
-                            const { imgPath } = item;
+                            const { imgPath, name } = item;
                             return (
-                              <div key={index}>
-                                <Image
-                                  src={imgPath}
-                                  width={50}
-                                  height={50}
-                                  alt="logo"
-                                  priority
-                                />
+                              <div className="w-16 h-16 mb-5">
+                                <div className="flex justify-center">
+                                  <div
+                                    key={index}
+                                    className="flex items-center w-[50px] h-[50px]"
+                                  >
+                                    <Image
+                                      src={imgPath}
+                                      width={50}
+                                      height={50}
+                                      alt="logo"
+                                      priority
+                                    />
+                                  </div>
+                                </div>
+                                <div className="text-sm mt-2 text-center">
+                                  {name}
+                                </div>
                               </div>
                             );
                           }
@@ -347,25 +380,35 @@ const About = () => {
                       </div>
                     </div>
                     {/* Mobile */}
-                    <div className="mb-12">
+                    <div className="mb-5">
                       <h4 className="text-xl font-semibold mb-2">
                         Mobile Development
                       </h4>
                       <div className="border-b border-border mb-4"></div>
                       {/* Skill List */}
-                      <div className="flex gap-x-2">
+                      <div className="flex flex-wrap gap-3">
                         {getData(skillData, "mobile").data.map(
                           (item, index) => {
-                            const { imgPath } = item;
+                            const { imgPath, name } = item;
                             return (
-                              <div key={index}>
-                                <Image
-                                  src={imgPath}
-                                  width={50}
-                                  height={50}
-                                  alt="logo"
-                                  priority
-                                />
+                              <div className="w-16 h-16 mb-5">
+                                <div className="flex justify-center">
+                                  <div
+                                    key={index}
+                                    className="flex items-center w-[50px] h-[50px]"
+                                  >
+                                    <Image
+                                      src={imgPath}
+                                      width={50}
+                                      height={50}
+                                      alt="logo"
+                                      priority
+                                    />
+                                  </div>
+                                </div>
+                                <div className="text-sm mt-2 text-center">
+                                  {name}
+                                </div>
                               </div>
                             );
                           }
