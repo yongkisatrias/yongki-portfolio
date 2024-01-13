@@ -98,6 +98,12 @@ const Projects = () => {
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
           My Projects
         </h2>
+        <p className="subtitle text-center">
+          Dive into the projects on each GitHub repos for in-depth details,
+          docs, and codebase. Everything you need to know about the project's
+          scope and features is neatly laid out. Explore the repos to unravel
+          the project's structure!
+        </p>
         {/* Tabs */}
         <Tabs defaultValue={category} className="mb-24 xl:mb-48">
           <TabsList className="w-full grid md:grid-cols-4 lg:max-w-[640px] mb-12 mx-auto md:border dark:border-none">
