@@ -5,11 +5,22 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projectData = [
   {
+    image: "/work/anilist.png",
+    category: "Full-Stack",
+    tools: ["Next.js", "Tailwind CSS", "PostgreSQL", "Prisma", "Supabase"],
+    name: "AniList",
+    description:
+      "AniList is where you can discover the most popular anime, anime recommendations, discussions, and a anime community.",
+    link: "https://anilist-anime.vercel.app/",
+    github: "https://github.com/yongkisatrias/anilist",
+  },
+  {
     image: "/work/portfolio-yongki.png",
     category: "Front-End",
-    tools: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    name: "My Portfolio",
-    description: "my personal portfolio page, created with ❤",
+    tools: ["Next.js", "Tailwind CSS", "Framer Motion", "shadcn/ui"],
+    name: "My Portfolio Website",
+    description:
+      "This website showcases my skills, projects, and experiences to potential employers and collaborators.",
     link: "https://yongki-portfolio.vercel.app/",
     github: "https://github.com/yongkisatrias/yongki-portfolio",
   },
@@ -29,7 +40,7 @@ const projectData = [
     tools: ["React Native", "Firebase"],
     name: "Mama Recipe",
     description:
-      "Introducing Mama Recipe, your ultimate culinary companion designed to elevate your cooking experience. Whether you're a passionate home chef or an aspiring foodie, our application is crafted just for you. With Mama Recipe, explore a world of culinary wonders right at your fingertips.",
+      "Your ultimate culinary companion designed to elevate your cooking experience. Our application is crafted just for you. With Mama Recipe, explore a world of culinary wonders right at your fingertips.",
     link: "https://github.com/yongkisatrias/mama_recipe_mobile/releases/tag/v1.0.0",
     github: "https://github.com/yongkisatrias/mama_recipe_mobile",
   },
@@ -106,7 +117,7 @@ const Projects = () => {
         </p>
         {/* Tabs */}
         <Tabs defaultValue={category} className="mb-24 xl:mb-48">
-          <TabsList className="w-full grid md:grid-cols-4 lg:max-w-[640px] mb-12 mx-auto md:border dark:border-none">
+          <TabsList className="w-full grid md:grid-cols-5 lg:max-w-[640px] mb-12 mx-auto md:border dark:border-none">
             {categories.map((category, index) => {
               return (
                 <TabsTrigger

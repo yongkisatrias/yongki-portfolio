@@ -113,6 +113,10 @@ const skillData = [
         imgPath: "/logo-skill/next-js.svg",
         name: "Next.js",
       },
+      {
+        imgPath: "/logo-skill/shadcn-ui.svg",
+        name: "shadcn/ui",
+      },
     ],
   },
   {
@@ -129,6 +133,14 @@ const skillData = [
       {
         imgPath: "/logo-skill/postgresql.svg",
         name: "PostgreSQL",
+      },
+      {
+        imgPath: "/logo-skill/prisma-svgrepo-com.svg",
+        name: "Prisma",
+      },
+      {
+        imgPath: "/logo-skill/supabase-icon.svg",
+        name: "Supabase",
       },
     ],
   },
@@ -152,7 +164,7 @@ const About = () => {
     return arr.find((item) => item.title === title);
   };
   return (
-    <section className="xl:h-[860px] pb-12 xl:py-24">
+    <section className="xl:h-[960px] pb-12 xl:py-24">
       <div className="container mx-auto">
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
           About Me
