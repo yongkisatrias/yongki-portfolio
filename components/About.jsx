@@ -94,6 +94,10 @@ const skillData = [
         name: "JavaScript",
       },
       {
+        imgPath: "/logo-skill/typescript-icon-svgrepo-com.svg",
+        name: "TypeScript",
+      },
+      {
         imgPath: "/logo-skill/bootstrap-5-1.svg",
         name: "Bootstrap",
       },
