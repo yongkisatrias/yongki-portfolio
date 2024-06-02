@@ -79,6 +79,19 @@ const qualificationData = [
 
 const skillData = [
   {
+    title: "language",
+    data: [
+      {
+        imgPath: "/logo-skill/logo-javascript.svg",
+        name: "JavaScript",
+      },
+      {
+        imgPath: "/logo-skill/typescript-icon-svgrepo-com.svg",
+        name: "TypeScript",
+      },
+    ],
+  },
+  {
     title: "frontend",
     data: [
       {
@@ -88,14 +101,6 @@ const skillData = [
       {
         imgPath: "/logo-skill/css-3.svg",
         name: "CSS",
-      },
-      {
-        imgPath: "/logo-skill/logo-javascript.svg",
-        name: "JavaScript",
-      },
-      {
-        imgPath: "/logo-skill/typescript-icon-svgrepo-com.svg",
-        name: "TypeScript",
       },
       {
         imgPath: "/logo-skill/bootstrap-5-1.svg",
@@ -135,12 +140,20 @@ const skillData = [
         name: "Express.js",
       },
       {
+        imgPath: "/logo-skill/prisma-svgrepo-com.svg",
+        name: "Prisma",
+      },
+      {
         imgPath: "/logo-skill/postgresql.svg",
         name: "PostgreSQL",
       },
       {
-        imgPath: "/logo-skill/prisma-svgrepo-com.svg",
-        name: "Prisma",
+        imgPath: "/logo-skill/mysql-logo-svgrepo-com.svg",
+        name: "MySQL",
+      },
+      {
+        imgPath: "/logo-skill/firebase-icon.svg",
+        name: "Firebase",
       },
       {
         imgPath: "/logo-skill/supabase-icon.svg",
@@ -154,10 +167,6 @@ const skillData = [
       {
         imgPath: "/logo-skill/react-2.svg",
         name: "React Native",
-      },
-      {
-        imgPath: "/logo-skill/firebase-icon.svg",
-        name: "Firebase",
       },
     ],
   },
@@ -320,37 +329,73 @@ const About = () => {
                 {/* Skills */}
                 <TabsContent value="skills">
                   <div className="text-center xl:text-left">
-                    <h3 className="h3 mb-8">
+                    <h3 className="h3 mb-5">
                       Languages, frameworks & libraries I use
                     </h3>
-                    {/* Front-End */}
-                    <div className="mb-5">
+                    {/* Programming Language */}
+                    <div className="mb-4">
                       <h4 className="text-xl font-semibold mb-2">
-                        Front-End Web Development
+                        Programming Language
                       </h4>
-                      <div className="border-b border-border mb-4"></div>
+                      <div className="border-b border-border mb-3"></div>
                       {/* Skill List */}
-                      <div className="flex flex-wrap gap-3">
-                        {getData(skillData, "frontend").data.map(
+                      <div className="flex flex-wrap gap-2">
+                        {getData(skillData, "language").data.map(
                           (item, index) => {
                             const { imgPath, name } = item;
                             return (
-                              <div className="w-16 h-16 mb-5">
+                              <div className="w-16 h-14 mb-5">
                                 <div className="flex justify-center">
                                   <div
                                     key={index}
-                                    className="flex items-center w-[50px] h-[50px]"
+                                    className="flex items-center w-[40px] h-[40px]"
                                   >
                                     <Image
                                       src={imgPath}
-                                      width={50}
-                                      height={50}
+                                      width={45}
+                                      height={45}
                                       alt="logo"
                                       priority
                                     />
                                   </div>
                                 </div>
-                                <div className="text-sm mt-2 text-center">
+                                <div className="text-sm mt-1 text-center">
+                                  {name}
+                                </div>
+                              </div>
+                            );
+                          }
+                        )}
+                      </div>
+                    </div>
+                    {/* Front-End */}
+                    <div className="mb-4">
+                      <h4 className="text-xl font-semibold mb-2">
+                        Front-End Web Development
+                      </h4>
+                      <div className="border-b border-border mb-3"></div>
+                      {/* Skill List */}
+                      <div className="flex flex-wrap gap-2">
+                        {getData(skillData, "frontend").data.map(
+                          (item, index) => {
+                            const { imgPath, name } = item;
+                            return (
+                              <div className="w-16 h-14 mb-5">
+                                <div className="flex justify-center">
+                                  <div
+                                    key={index}
+                                    className="flex items-center w-[40px] h-[40px]"
+                                  >
+                                    <Image
+                                      src={imgPath}
+                                      width={45}
+                                      height={45}
+                                      alt="logo"
+                                      priority
+                                    />
+                                  </div>
+                                </div>
+                                <div className="text-sm mt-1 text-center">
                                   {name}
                                 </div>
                               </div>
@@ -360,33 +405,33 @@ const About = () => {
                       </div>
                     </div>
                     {/* Back-End */}
-                    <div className="mb-5">
+                    <div className="mb-4">
                       <h4 className="text-xl font-semibold mb-2">
                         Back-End Web Development
                       </h4>
-                      <div className="border-b border-border mb-4"></div>
+                      <div className="border-b border-border mb-3"></div>
                       {/* Skill List */}
-                      <div className="flex flex-wrap gap-3">
+                      <div className="flex flex-wrap gap-2">
                         {getData(skillData, "backend").data.map(
                           (item, index) => {
                             const { imgPath, name } = item;
                             return (
-                              <div className="w-16 h-16 mb-5">
+                              <div className="w-16 h-14 mb-5">
                                 <div className="flex justify-center">
                                   <div
                                     key={index}
-                                    className="flex items-center w-[50px] h-[50px]"
+                                    className="flex items-center w-[40px] h-[40px]"
                                   >
                                     <Image
                                       src={imgPath}
-                                      width={50}
-                                      height={50}
+                                      width={45}
+                                      height={45}
                                       alt="logo"
                                       priority
                                     />
                                   </div>
                                 </div>
-                                <div className="text-sm mt-2 text-center">
+                                <div className="text-sm mt-1 text-center">
                                   {name}
                                 </div>
                               </div>
@@ -396,33 +441,33 @@ const About = () => {
                       </div>
                     </div>
                     {/* Mobile */}
-                    <div className="mb-5">
+                    <div className="mb-4">
                       <h4 className="text-xl font-semibold mb-2">
                         Mobile Development
                       </h4>
-                      <div className="border-b border-border mb-4"></div>
+                      <div className="border-b border-border mb-3"></div>
                       {/* Skill List */}
-                      <div className="flex flex-wrap gap-3">
+                      <div className="flex flex-wrap gap-2">
                         {getData(skillData, "mobile").data.map(
                           (item, index) => {
                             const { imgPath, name } = item;
                             return (
-                              <div className="w-16 h-16 mb-5">
+                              <div className="w-16 h-14 mb-5">
                                 <div className="flex justify-center">
                                   <div
                                     key={index}
-                                    className="flex items-center w-[50px] h-[50px]"
+                                    className="flex items-center w-[40px] h-[40px]"
                                   >
                                     <Image
                                       src={imgPath}
-                                      width={50}
-                                      height={50}
+                                      width={45}
+                                      height={45}
                                       alt="logo"
                                       priority
                                     />
                                   </div>
                                 </div>
-                                <div className="text-sm mt-2 text-center">
+                                <div className="text-sm mt-1 text-center">
                                   {name}
                                 </div>
                               </div>
