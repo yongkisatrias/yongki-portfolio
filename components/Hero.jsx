@@ -24,7 +24,7 @@ const Hero = () => {
             <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
               Fullstack Web & Mobile Developer
             </div>
-            <h1 className="h1 mb-4">Hi👋🏻, I'm Yongki Satria Sanjaya</h1>
+            <h1 className="h1 mb-4">Hi, I'm Yongki Satria Sanjaya</h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
               Fullstack and Mobile Dev with Javascript. Love a growth mindset,
               teamwork, committed & Integrity-driven.
